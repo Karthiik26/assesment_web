@@ -1,10 +1,10 @@
 # assesment_web
 
-# NOTE :- Login -> username = angular & password = 11111111
+NOTE :- Login -> username = angular & password = 11111111
 
-# CRUD Application with JSON API and Picsum API Integration
+CRUD Application with JSON API and Picsum API Integration
 
-# Introduction
+Introduction
 Hello there! 👋 I'm Karthik, the developer behind this CRUD application with JSON API and Picsum API integration. I'm passionate about crafting robust and user-friendly software solutions that leverage the latest technologies.
 
 This project is a CRUD (Create, Read, Update, Delete) application built using Angular that interacts with a JSON API for data management. Additionally, it integrates the Picsum API to dynamically fetch images for display.
