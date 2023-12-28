@@ -1,0 +1,21 @@
+<div class="container-div">
+    <form #Loginform2="ngForm" (ngSubmit)="Putdata(Loginform2.value)">
+        <!-- <form #Loginform="ngForm"> -->
+        <p class="head">Creating Project</p>
+        <h3 class="head2" style="text-align:center; color: green; font-weight: bolder;" >{{ Displaying }}</h3>
+
+        <input class="inpt" type="text" placeholder="Image URL" #urllink="ngModel" name="urllink" ngModel required>
+        <span *ngIf="urllink.invalid && urllink.touched" style="color: red;">Enter the Url</span>
+
+        <input class="inpt" type="text" placeholder="AUTHOR" #author="ngModel" name="author" ngModel required>
+        <span *ngIf="author.invalid && author.touched" style="color: red;">Enter the Auther Name</span>
+
+        <button [disabled]="Loginform2.invalid" type="submit" class="btn btn-primary">Submit</button>
+        
+    </form>
+
+
+</div>
+<div class="btn2">
+    <button routerLink="/Dashboard">Back</button>
+</div>

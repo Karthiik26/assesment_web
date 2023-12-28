@@ -1,0 +1,104 @@
+.choose{
+    margin-bottom: 20px; 
+    font-size: 20px; 
+    display: grid; 
+    grid-template-areas: '1';
+}
+.cfotp{
+    float: left; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    
+}
+.radios{
+    justify-content: center; 
+    display: flex;
+}
+
+body{
+    padding-top: 50px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 40%;
+    margin: auto;
+    /* margin-top: 50; */
+}
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 40%;
+    margin-left: 30%;
+}
+.container3{
+    display: flex;
+    justify-content: center;
+    max-width: 40%;
+    margin: auto;
+}
+.head{
+    font-size: 28px;
+    display: flex;
+    justify-content: left;
+}
+form{
+    width: 70%;
+}
+form .inpt{
+    width: 98%;
+    margin-top: 30px;
+    font-size: 20px;
+    height: 40px;
+    padding-left: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid grey;
+}
+form .inpt:focus{
+    background-color: white;
+}
+input:focus{
+    outline: none;
+}
+.forget{
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+button{
+    width: 100%;
+    font-size: 20px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 1px 10px 0 rgb(109, 109, 109);
+}
+.btn{
+    margin-top: 30px;
+}
+
+a{
+    cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.imgs-container{
+    width: 50%;
+    background-color: bisque;
+    border: 1px dashed black;
+    border-radius: 5px;
+    padding: 5px;
+}
+#phnordo , #eidrdo{
+    width: 40px; 
+    height: 20px;
+}

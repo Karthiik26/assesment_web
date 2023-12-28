@@ -1,0 +1,316 @@
+.container {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.nav {
+    width: 1240px;
+    /* max-width: 100%; */
+    box-sizing: border-box;
+    height: 58px;
+    background-color: rgb(255, 255, 255);
+}
+
+.sidebar {
+    width: 241px;
+    height: 1000px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.SideProfile {
+    display: flex;
+    left: 50%;
+    margin-left: 80%;
+    margin-top: 8px;
+    width: 250px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+p {
+    margin: 0;
+}
+
+.profileImg {
+    display: flex;
+}
+
+.profileImg img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    object-fit: contain;
+    margin-left: 10px;
+}
+
+/* side bar */
+
+.line01 {
+    width: 203px;
+    margin: 15px;
+    background-color: black;
+    height: 1px;
+}
+
+.line02 {
+    display: none;
+}
+
+.aligning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.txt {
+    font-size: 16px;
+    margin-left: 2px;
+    margin-top: 12px;
+}
+
+.main-image {
+    margin: 8px;
+}
+
+.items-link-01 {
+    display: flex;
+    margin: 12px;
+    margin-top: 5px;
+    margin-left: 60px;
+}
+
+.logo img {
+    width: 76px;
+    height: 28px;
+}
+
+.items {
+    margin-left: -45px;
+}
+
+.bottom-item {
+    margin-top: 480px;
+}
+
+.griding {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* my project */
+
+.card h1 {
+    font-weight: bolder;
+    margin-left: 50px;
+}
+
+.CreateCard {
+    background-color: white;
+    width: 404px;
+    height: 265px;
+    margin-left: 50px;
+    display: grid;
+}
+
+.CreateCard2 {
+    background-color: white;
+    width: 404px;
+    height: 265px;
+    margin-top: 310px;
+    margin-left: -860px;
+    display: grid;
+}
+
+.insidecard {
+    width: 380;
+    height: 180px;
+    background-color: #FA782F;
+    margin: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.click {
+    margin: 60PX 17px 19px 40%;
+}
+
+.create {
+    margin: -5px 15px 18px 30%;
+}
+
+.main {
+    display: flex;
+}
+
+/* responsive for tablet */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .SideProfile {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .items {
+        margin-left: 0;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-left: 0;
+    }
+
+    .CreateCard {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .insidecard {
+        width: 100%;
+        height: auto;
+    }
+
+    .click {
+        margin: 20px auto 10px;
+    }
+
+    .create {
+        margin: -5px auto 18px;
+    }
+}
+
+/* Responsive styles for mobile */
+@media only screen and (max-width: 767px) {
+    .sidebar {
+        padding: 5px;
+        width: 100%;
+    }
+
+    .line01 {
+        margin: 5px;
+        width: 300px;
+    }
+
+    .healing-head {
+        text-align: center;
+    }
+
+    .line02 {
+        display: block;
+        width: 300px;
+        margin: 5px;
+        background-color: black;
+        height: 1px;
+    }
+
+    .resItems {
+        position: absolute;
+        top: 10px;
+
+    }
+
+    .sidebar {
+        width: auto;
+        height: 400px;
+    }
+
+    .logo img {
+        width: 100px;
+        height: 50px;
+    }
+
+    .colapse {
+        display: none;
+    }
+
+    .txt {
+        font-size: 14px;
+        margin-left: 2px;
+        margin-top: 10px;
+    }
+
+    .main-image {
+        margin: 5px;
+    }
+
+    .items-link-01 {
+        margin: 8px;
+        margin-top: 2px;
+    }
+
+    .bottom-item {
+        margin-top: 300px;
+    }
+
+    .card h1 {
+        margin-left: 10px;
+    }
+
+    .CreateCard {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .CreateCard2 {
+        background-color: white;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        height: 265px;
+        margin-top: -10px;
+        /* display: grid; */
+    }
+
+    .insidecard {
+        width: 88%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .click {
+        margin: 35px 0 0 40%;
+
+    }
+
+    .create {
+        margin: -5px auto 18px;
+    }
+
+    .SideProfile {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}

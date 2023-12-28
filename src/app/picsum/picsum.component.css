@@ -1,0 +1,100 @@
+.main {
+    position: absolute;
+    top: 60px;
+    left: 250px;
+}
+
+/* grid items */
+
+.grid-card img{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.grid-card{
+    cursor: pointer;
+
+}
+
+.title {
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.discription {
+    font-size: 14px;
+    color: black;
+    font-weight: bolder;
+}
+
+.heading{
+    font-size: 34px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.card {
+    background-color: rgb(255, 220, 174);
+    color: white;
+    padding: 1rem;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.btn button{
+    padding: 10px;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-around;
+}
+.btn01, .btn02{
+    width: 100px;
+    padding: 10px;
+    border: none;
+    font-size: 12px;
+}
+.btn01{
+    background-color: rgb(83, 252, 83);
+    cursor: pointer;
+}
+.btn02{
+    cursor: pointer;
+    background-color: rgb(252, 83, 83);
+    
+}

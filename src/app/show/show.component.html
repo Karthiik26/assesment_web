@@ -1,0 +1,23 @@
+<div class="main-container">
+    <p class="heading">MY PROJECTS</p>
+    <p style="color: red; text-align: center;font-size: 15px; font-weight: bolder;" >{{deleteDisplay}}</p>
+    <div class="cards">
+        <div class="card" *ngFor="let i of Displaying" >
+            <div class="grid-card" >
+                <img routerLink="/Read/{{i.id}}" [src]="i.urllink" alt="Img Not Found">
+                <p class="title" style="text-align: center;">{{i.author}}</p>
+                
+                <div class="btns">
+                    <button class="btn01" routerLink="/update/{{i.id}}" >Update</button>
+                    <button class="btn02" (click)="DeleteData(i.id)" >Delete</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="btn">
+        <button routerLink="/Dashboard">Back</button>
+    </div>
+
+</div>

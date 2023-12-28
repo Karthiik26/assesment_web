@@ -1,0 +1,89 @@
+<!-- Login Page -->
+<div class="maincont" *ngIf="!showlogin">
+    <h4 style="text-align: center; color: green;" >{{display}}</h4>
+    <div class="container" *ngIf="!resetlog">
+        <form #Loginform2="ngForm" (ngSubmit)="loginform(Loginform2.value)">
+            <!-- <form #Loginform="ngForm"> -->
+            <p class="head">User Login</p>
+
+            <input class="inpt" type="text" placeholder="Email Id" #usrname="ngModel" name="usrname" ngModel required>
+            <span *ngIf="usrname.invalid && usrname.touched" style="color: red;">Enter Email id</span>
+
+            <input class="inpt" type="password" placeholder="Password" #pwd="ngModel" minlength="8" name="pwds" ngModel
+                required>
+            <span *ngIf="pwd.invalid && pwd.touched" style="color: red;">Enter Valid Password</span>
+
+            <div class="forget">Forget<a (click)="forgetpwd()" style="color: blue;">&nbsp;Password</a></div>
+
+            <!-- <button (click)="loginform(usrname.value,pwd.value)" [disabled]="Loginform.invalid" >Login</button> -->
+            <button [disabled]="Loginform2.invalid">Login</button>
+            <br>
+            <br>
+            <div style="text-align: center;">New User Then <a style="color: blue; border-bottom: 1px solid blue;"
+                    (click)="opensignup()">SignUp</a></div>
+        </form>
+
+    </div>
+</div>
+
+
+<!-- signUp Form -->
+<div class="container2" *ngIf="showlogin" >
+
+    <form #Loginform="ngForm" (ngSubmit)="signupform(Loginform.value)">
+        <!--  signup  -->
+        <p class="head">User SignUp</p>
+
+        <input class="inpt" type="Name" placeholder="Name *" #fname="ngModel" name="fname" ngModel required>
+
+        <input class="inpt" type="text" placeholder="UserName *" #usrname="ngModel" name="usrname" ngModel required>
+
+        <input class="inpt" type="email" placeholder="Email Id *" #email="ngModel" name="email" ngModel required>
+
+        <input class="inpt" type="number" placeholder="Mobile Number *" #number="ngModel" name="Phone" ngModel required>
+
+        <input class="inpt" type="password" placeholder="Password *" #pwd="ngModel" minlength="8" name="pwds" ngModel
+            required>
+        <br>
+        <button class="btn" (click)="signupbtn()" [disabled]="!Loginform.valid">Sign Up</button>
+        <br>
+        <br>
+        <div style="text-align: center;">Do You Have a Account Then
+            <a style="color: blue; border-bottom: 1px solid blue;" (click)="openlogin()">LogIn</a>
+        </div>
+    </form>
+</div>
+
+
+<!-- Forget Password -->
+<div class="container3" *ngIf="resetlog" >
+    <form #Resetpwd="ngForm" (ngSubmit)="resetpwd(Resetpwd.value)">
+
+        <p class="head">User Reset Password</p>
+
+        <input class="inpt" type="number" inputmode="numeric" placeholder="Enter Your Phone Number" #phn="ngModel"
+            name="PNumber" ngModel>
+
+        <input class="inpt" type="email" name="email" placeholder="Enter Mail Id" #eid="ngModel" name="email" ngModel>
+
+        <div class="choose">
+            <div class="cfotp">Choose For OTP : </div>
+            <div class="radios">
+                <span class="rdo" style="margin-right: 20px;">
+                    <input type="radio" name="otp" value="Phone" #phnordo="ngModel" ngModel >
+                    <label for="phone">Phone</label>
+                </span>
+
+                <span class="rdo2">
+                    <input type="radio" name="otp" value="Email" #eidrdo="ngModel" ngModel >
+                    <label for="Email">Email</label>
+                </span>
+            </div>
+        </div>
+
+        <button>Click For OTP</button>
+        <div class="forget" style="text-align: center;"> Back To 
+            <a (click)="forgetpwd2()" style="color: blue;">&nbsp;LogIn</a>
+        </div>
+    </form>
+</div>
